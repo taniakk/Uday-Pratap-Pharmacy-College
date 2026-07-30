@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uday Pratap Pharmacy College | उदय प्रताप फार्मेसी कॉलेज</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: '#1e3a8a',
+              blueDark: '#1e293b',
+              green: '#059669',
+              greenHover: '#047857',
+              lightBg: '#f8fafc'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Put this inside your <head> tag -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+</head>
+<body class="bg-brand-lightBg text-gray-800 font-sans antialiased">
+
+<!-- Top Info Bar -->
+<div class="bg-brand-blueDark text-gray-200 text-xs sm:text-sm py-2 px-4">
+  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+    <div class="flex items-center space-x-6">
+      <a href="tel:+919335592212" class="hover:text-white hover:underline transition flex items-center">
+        <i class="fa-solid fa-phone text-brand-green mr-2"></i> +91 93355 92212
+      </a>
+      <a href="mailto:ajaykusingh749@gmail.com" class="hover:text-white hover:underline transition flex items-center">
+        <i class="fa-solid fa-envelope text-brand-green mr-2"></i> ajaykusingh749@gmail.com
+      </a>
+    </div>
+    <div class="flex items-center space-x-4">
+      <a href="https://maps.google.com/?q=Uday+Pratap+Pharmacy+College+Mazadiha+Sakaldiha+Saidpur+Highway" target="_blank" rel="noopener noreferrer" class="hover:text-white hover:underline transition flex items-center">
+        <i class="fa-solid fa-location-dot text-brand-green mr-2"></i> Varanasi / Chandauli, UP
+      </a>
+      <a href="#contact" class="bg-brand-green hover:bg-brand-greenHover text-white px-3 py-1 rounded font-medium text-xs transition inline-block">Admissions Open</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header / Navigation -->
+<header class="bg-white shadow-md sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 py-3 sm:py-4 flex justify-between items-center">
+    
+    <!-- Logo & Title -->
+    <div class="flex items-center space-x-3">
+      <div class="w-10 h-10 sm:w-12 sm:h-12 bg-brand-blue text-white flex items-center justify-center rounded-full text-lg sm:text-xl font-bold border-2 border-brand-green shadow shrink-0">
+        <i class="fa-solid fa-mortar-pestle"></i>
+      </div>
+      <div>
+        <h1 class="text-base sm:text-2xl font-bold text-brand-blue leading-tight">Uday Pratap Pharmacy College</h1>
+        <p class="text-[10px] sm:text-xs text-gray-500 font-semibold">उदय प्रताप फार्मेसी कॉलेज | Approved by PCI & Govt. of UP</p>
+      </div>
+    </div>
+    
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex space-x-6 text-sm font-semibold text-gray-700">
+      <a href="#home" class="hover:text-brand-green transition">Home</a>
+      <a href="#about" class="hover:text-brand-green transition">About Us</a>
+      <a href="#courses" class="hover:text-brand-green transition">Courses</a>
+      <a href="#facilities" class="hover:text-brand-green transition">Facilities</a>
+      <a href="#contact" class="hover:text-brand-green transition">Contact</a>
+    </nav>
+
+    <!-- Right Action Button & Mobile Menu Toggle -->
+    <div class="flex items-center space-x-3">
+      <a href="#contact" class="hidden sm:inline-block bg-brand-blue hover:bg-brand-blueDark text-white px-5 py-2 rounded-lg font-medium text-sm transition shadow-sm">
+        Apply Now
+      </a>
+
+      <!-- Hamburger Button (Mobile Only) -->
+      <button id="mobile-menu-btn" aria-label="Toggle navigation menu" class="md:hidden text-gray-700 hover:text-brand-green focus:outline-none p-2 rounded-lg transition">
+        <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Dropdown Navigation Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 pt-2 pb-4 space-y-3 shadow-lg transition-all duration-300">
+    <a href="#home" class="mobile-nav-link block py-2 px-3 text-sm font-semibold text-gray-700 hover:bg-brand-green/10 hover:text-brand-green rounded-lg transition">Home</a>
+    <a href="#about" class="mobile-nav-link block py-2 px-3 text-sm font-semibold text-gray-700 hover:bg-brand-green/10 hover:text-brand-green rounded-lg transition">About Us</a>
+    <a href="#courses" class="mobile-nav-link block py-2 px-3 text-sm font-semibold text-gray-700 hover:bg-brand-green/10 hover:text-brand-green rounded-lg transition">Courses</a>
+    <a href="#facilities" class="mobile-nav-link block py-2 px-3 text-sm font-semibold text-gray-700 hover:bg-brand-green/10 hover:text-brand-green rounded-lg transition">Facilities</a>
+    <a href="#contact" class="mobile-nav-link block py-2 px-3 text-sm font-semibold text-gray-700 hover:bg-brand-green/10 hover:text-brand-green rounded-lg transition">Contact</a>
+    <a href="#contact" class="mobile-nav-link block sm:hidden text-center bg-brand-blue hover:bg-brand-blueDark text-white py-2 rounded-lg font-medium text-sm transition shadow-sm mt-2">
+      Apply Now
+    </a>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="relative bg-slate-950 text-white py-20 lg:py-28 px-4 overflow-hidden border-b border-slate-800">
+  
+  <!-- Subtle Glowing Background Accents -->
+  <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-green/15 rounded-full blur-[140px] pointer-events-none"></div>
+  <div class="absolute -top-10 -right-10 w-96 h-96 bg-brand-blue/25 rounded-full blur-[120px] pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 lg:gap-8 items-center relative z-10">
+    
+    <!-- Left Column: Content (7 cols) -->
+    <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+      
+      <!-- Top Badge -->
+      <div class="inline-flex items-center gap-2 bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide backdrop-blur-md shadow-inner">
+        <span class="flex h-2 w-2 relative">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+        </span>
+        ADMISSIONS OPEN FOR ACADEMIC SESSION 2026–27
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.15] text-white">
+        Elevating Academic Excellence in <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">Pharmacy Sciences</span>
+      </h1>
+
+      <!-- Description -->
+      <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 font-normal">
+        Empowering future healthcare professionals through cutting-edge laboratories, PCI-approved curricula, and comprehensive practical exposure at <strong class="text-white">Uday Pratap Pharmacy College</strong>.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+        <a href="#courses" class="w-full sm:w-auto bg-gradient-to-r from-brand-green to-emerald-600 hover:from-emerald-600 hover:to-teal-700 text-white px-8 py-4 rounded-xl font-semibold text-sm transition-all duration-300 shadow-lg shadow-emerald-950/50 hover:shadow-emerald-500/20 hover:-translate-y-0.5 text-center flex items-center justify-center gap-2">
+          <span>Explore Academic Programs</span>
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </a>
+        <a href="#contact" class="w-full sm:w-auto bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-700/80 hover:border-slate-600 px-8 py-4 rounded-xl font-semibold text-sm transition-all duration-300 backdrop-blur-md text-center">
+          Contact Admission Cell
+        </a>
+      </div>
+
+      <!-- Quick Trust Metrics / Stats -->
+      <div class="pt-6 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0 text-center lg:text-left">
+        <div>
+          <p class="text-2xl font-black text-emerald-400">100%</p>
+          <p class="text-xs text-slate-400 font-medium uppercase tracking-wider mt-0.5">PCI Compliant</p>
+        </div>
+        <div>
+          <p class="text-2xl font-black text-amber-400">High</p>
+          <p class="text-xs text-slate-400 font-medium uppercase tracking-wider mt-0.5">Lab Standards</p>
+        </div>
+        <div>
+          <p class="text-2xl font-black text-blue-400">Expert</p>
+          <p class="text-xs text-slate-400 font-medium uppercase tracking-wider mt-0.5">Teaching Faculty</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right Column: Campus Media Frame (5 cols) -->
+    <div class="lg:col-span-5 relative">
+      
+      <!-- Premium Framed Container -->
+      <div class="relative rounded-3xl p-3 bg-gradient-to-b from-slate-700/50 via-slate-800/30 to-slate-900/80 border border-slate-700/60 shadow-2xl backdrop-blur-xl">
+        
+        <!-- Image Box (Set to object-contain so full image displays without cropping) -->
+        <div class="relative rounded-2xl overflow-hidden bg-slate-900 min-h-[320px] sm:min-h-[380px] flex items-center justify-center border border-slate-800">
+          <img 
+            src="/images/udaypartapclg.webp" 
+            alt="Uday Pratap Pharmacy College Campus" 
+            class="w-full h-auto max-h-[420px] object-contain rounded-xl transition-transform duration-700 hover:scale-[1.02]"
+          >
+          <!-- Subtle vignette gradient overlay -->
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none"></div>
+        </div>
+
+        <!-- Floating Badge 1: PCI Recognition -->
+        <div class="absolute -bottom-5 -left-4 sm:-left-6 bg-slate-900/95 text-white p-4 rounded-2xl shadow-2xl border border-slate-700/80 flex items-center gap-3.5 backdrop-blur-md">
+          <div class="w-12 h-12 bg-emerald-500/10 border border-emerald-500/30 rounded-xl flex items-center justify-center text-emerald-400 text-xl font-bold">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div>
+            <p class="font-bold text-sm text-white leading-tight">PCI Approved</p>
+            <p class="text-xs text-slate-400 mt-0.5">Pharmacy Council of India</p>
+          </div>
+        </div>
+
+        <!-- Floating Badge 2: Modern Campus -->
+        <div class="absolute -top-4 -right-4 bg-slate-900/90 text-amber-300 px-3.5 py-2 rounded-xl shadow-lg border border-slate-700/80 hidden sm:flex items-center gap-2 text-xs font-semibold backdrop-blur-md">
+          <i class="fa-solid fa-building-columns text-amber-400"></i>
+          <span>Official Campus View</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Highlight Cards -->
+  <section class="max-w-7xl mx-auto px-4 -mt-10 relative z-10 grid sm:grid-cols-3 gap-6">
+    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-brand-blue hover:shadow-lg transition">
+      <i class="fa-solid fa-flask text-3xl text-brand-blue mb-3"></i>
+      <h3 class="font-bold text-lg mb-1 text-gray-900">Modern Laboratories</h3>
+      <p class="text-xs text-gray-600">Fully equipped labs for practical learning in Pharmaceutics, Chemistry, and Pharmacognosy.</p>
+    </div>
+    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-brand-green hover:shadow-lg transition">
+      <i class="fa-solid fa-user-graduate text-3xl text-brand-green mb-3"></i>
+      <h3 class="font-bold text-lg mb-1 text-gray-900">Expert Faculty</h3>
+      <p class="text-xs text-gray-600">Experienced academic mentors dedicated to professional student development.</p>
+    </div>
+    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-brand-blue mb-3 hover:shadow-lg transition">
+      <i class="fa-solid fa-briefcase text-3xl text-brand-blue mb-3"></i>
+      <h3 class="font-bold text-lg mb-1 text-gray-900">Career Assistance</h3>
+      <p class="text-xs text-gray-600">Dedicated support for hospital training, internships, and retail/industrial placement.</p>
+    </div>
+  </section>
+  
+<!-- Premium About Us Section (Clean White Theme) -->
+<section id="about" class="relative bg-white text-gray-800 py-20 px-4 overflow-hidden border-t border-gray-100">
+  
+  <!-- Subtle Light Ambient Glows -->
+  <div class="absolute -top-24 -left-24 w-96 h-96 bg-brand-green/10 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-brand-blue/10 rounded-full blur-3xl pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto space-y-16 relative z-10">
+    
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto space-y-3" data-aos="fade-up">
+      <span class="inline-block px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-brand-green bg-brand-green/10 border border-brand-green/20">
+        About Uday Pratap Pharmacy College
+      </span>
+      <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900">
+        Pioneering Excellence in <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue via-brand-green to-teal-600">Pharmaceutical Sciences</span>
+      </h2>
+      <div class="w-20 h-1 bg-gradient-to-r from-brand-green to-brand-blue mx-auto rounded-full"></div>
+      <p class="text-xs sm:text-base text-gray-600 leading-relaxed font-normal">
+        Established in the historic Varanasi & Chandauli region, Uday Pratap Pharmacy College stands as a beacon of academic innovation, modern research, and clinical mastery.
+      </p>
+    </div>
+
+    <!-- Key Statistics Grid (Light Cards with Hover Elevation) -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+      
+      <!-- Card 1: Established Date -->
+      <div class="bg-gray-50/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-200/80 text-center shadow-sm hover:shadow-xl hover:border-brand-green/40 hover:-translate-y-1 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="100">
+        <div class="w-12 h-12 bg-brand-green/10 text-brand-green rounded-xl flex items-center justify-center mx-auto mb-3 text-2xl group-hover:scale-110 group-hover:bg-brand-green group-hover:text-white transition-all duration-300">
+          <i class="fa-solid fa-calendar-day"></i>
+        </div>
+        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight">19 May 2020</h3>
+        <p class="text-xs text-gray-500 mt-1 font-medium">Foundation Date</p>
+      </div>
+
+      <!-- Card 2: Student Base -->
+      <div class="bg-gray-50/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-200/80 text-center shadow-sm hover:shadow-xl hover:border-brand-green/40 hover:-translate-y-1 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="200">
+        <div class="w-12 h-12 bg-brand-green/10 text-brand-green rounded-xl flex items-center justify-center mx-auto mb-3 text-2xl group-hover:scale-110 group-hover:bg-brand-green group-hover:text-white transition-all duration-300">
+          <i class="fa-solid fa-user-graduate"></i>
+        </div>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight">300+</h3>
+        <p class="text-xs text-gray-500 mt-1 font-medium">Enrolled Scholars</p>
+      </div>
+
+      <!-- Card 3: PCI Recognition -->
+      <div class="bg-gray-50/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-200/80 text-center shadow-sm hover:shadow-xl hover:border-brand-green/40 hover:-translate-y-1 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="300">
+        <div class="w-12 h-12 bg-brand-green/10 text-brand-green rounded-xl flex items-center justify-center mx-auto mb-3 text-2xl group-hover:scale-110 group-hover:bg-brand-green group-hover:text-white transition-all duration-300">
+          <i class="fa-solid fa-award"></i>
+        </div>
+        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight">PCI Approved</h3>
+        <p class="text-xs text-gray-500 mt-1 font-medium">BTEUP & AKTU Affiliated</p>
+      </div>
+
+      <!-- Card 4: Career Support -->
+      <div class="bg-gray-50/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-200/80 text-center shadow-sm hover:shadow-xl hover:border-brand-green/40 hover:-translate-y-1 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="400">
+        <div class="w-12 h-12 bg-brand-green/10 text-brand-green rounded-xl flex items-center justify-center mx-auto mb-3 text-2xl group-hover:scale-110 group-hover:bg-brand-green group-hover:text-white transition-all duration-300">
+          <i class="fa-solid fa-briefcase"></i>
+        </div>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight">100%</h3>
+        <p class="text-xs text-gray-500 mt-1 font-medium">Placement Guidance</p>
+      </div>
+
+    </div>
+
+    <!-- Main Narrative & Highlights Split -->
+    <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-center bg-gray-50/50 p-8 sm:p-12 rounded-3xl border border-gray-200/80 shadow-sm">
+      
+      <!-- Left Narrative Text -->
+      <div class="space-y-5" data-aos="fade-right" data-aos-delay="100">
+        <h3 class="text-2xl font-bold text-gray-900 tracking-wide">Transforming Passion into Healthcare Leadership</h3>
+        <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+          Founded on <strong class="text-gray-900">May 19, 2020</strong>, Uday Pratap Pharmacy College was created to bridge high-standard medical education with accessibility. Today, our campus houses over <strong class="text-brand-green font-semibold">300+ thriving pharmacy students</strong> across D.Pharm and B.Pharm degree programs.
+        </p>
+        <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+          Through rigorous lab work, real-world industrial exposure, and state-of-the-art facilities, we prepare our scholars to excel in retail pharmacy, clinical research, quality control, and pharmaceutical manufacturing.
+        </p>
+        <div class="pt-3">
+          <a href="#contact" class="inline-flex items-center space-x-2 bg-brand-green hover:bg-brand-greenHover text-white text-xs sm:text-sm font-bold px-6 py-3 rounded-xl shadow-md transition-all duration-300 transform hover:-translate-y-0.5">
+            <span>Begin Your Application</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Feature Checklist Card -->
+      <div class="space-y-4 bg-white p-6 sm:p-8 rounded-2xl border border-gray-200/80 shadow-sm" data-aos="fade-left" data-aos-delay="200">
+        <h4 class="font-bold text-base text-gray-900 border-b border-gray-100 pb-3">Key Campus Advantages</h4>
+        
+        <ul class="space-y-3.5 text-xs sm:text-sm text-gray-700">
+          <li class="flex items-start space-x-3">
+            <span class="w-5 h-5 rounded-full bg-brand-green/15 text-brand-green flex items-center justify-center text-xs mt-0.5 shrink-0"><i class="fa-solid fa-check"></i></span>
+            <span><strong class="text-gray-900">PCI Recognized:</strong> Fully compliant with Pharmacy Council of India guidelines.</span>
+          </li>
+          <li class="flex items-start space-x-3">
+            <span class="w-5 h-5 rounded-full bg-brand-green/15 text-brand-green flex items-center justify-center text-xs mt-0.5 shrink-0"><i class="fa-solid fa-check"></i></span>
+            <span><strong class="text-gray-900">Advanced Labs:</strong> Specialized Pharmaceutics, Chemistry, and Pharmacology suites.</span>
+          </li>
+          <li class="flex items-start space-x-3">
+            <span class="w-5 h-5 rounded-full bg-brand-green/15 text-brand-green flex items-center justify-center text-xs mt-0.5 shrink-0"><i class="fa-solid fa-check"></i></span>
+            <span><strong class="text-gray-900">Smart Classrooms:</strong> Interactive digital learning environments.</span>
+          </li>
+          <li class="flex items-start space-x-3">
+            <span class="w-5 h-5 rounded-full bg-brand-green/15 text-brand-green flex items-center justify-center text-xs mt-0.5 shrink-0"><i class="fa-solid fa-check"></i></span>
+            <span><strong class="text-gray-900">Location Advantage:</strong> Strategic connectivity along the Sakaldiha-Saidpur Highway.</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="py-16 px-4 max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue">Academic Programs Offered</h2>
+      <div class="w-16 h-1 bg-brand-green mx-auto my-3 rounded"></div>
+      <p class="text-xs sm:text-sm text-gray-600">Prepare for a successful career in healthcare, clinical pharmacy, and pharmaceutical industries.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <!-- D.Pharm Card -->
+      <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden hover:shadow-xl transition">
+        <div class="bg-brand-blue text-white p-6">
+          <span class="text-xs font-semibold bg-brand-green text-white px-2.5 py-1 rounded-full uppercase tracking-wider">Diploma</span>
+          <h3 class="text-2xl font-bold mt-2">D.Pharm (Diploma in Pharmacy)</h3>
+          <p class="text-xs text-blue-200 mt-1">2 Years Full-Time Course</p>
+        </div>
+        <div class="p-6 space-y-4">
+          <ul class="text-xs sm:text-sm text-gray-600 space-y-2">
+            <li><i class="fa-solid fa-check text-brand-green mr-2"></i> <strong>Eligibility:</strong> 10+2 with Physics, Chemistry, Biology/Maths</li>
+            <li><i class="fa-solid fa-check text-brand-green mr-2"></i> <strong>Focus:</strong> Retail & Community Pharmacy, Hospital Training</li>
+            <li><i class="fa-solid fa-check text-brand-green mr-2"></i> <strong>Outcome:</strong> Registered Pharmacist license upon completion</li>
+          </ul>
+          <a href="#contact" class="block text-center bg-brand-lightBg hover:bg-gray-100 text-brand-blue font-semibold py-2.5 rounded-lg text-sm border border-gray-200 transition">
+            Inquire Admission
+          </a>
+        </div>
+      </div>
+
+      <!-- B.Pharm Card -->
+      <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden hover:shadow-xl transition">
+        <div class="bg-slate-900 text-white p-6">
+          <span class="text-xs font-semibold bg-brand-green text-white px-2.5 py-1 rounded-full uppercase tracking-wider">Undergraduate</span>
+          <h3 class="text-2xl font-bold mt-2">B.Pharm (Bachelor of Pharmacy)</h3>
+          <p class="text-xs text-gray-300 mt-1">4 Years Full-Time Degree</p>
+        </div>
+        <div class="p-6 space-y-4">
+          <ul class="text-xs sm:text-sm text-gray-600 space-y-2">
+            <li><i class="fa-solid fa-check text-brand-green mr-2"></i> <strong>Eligibility:</strong> 10+2 with PCB/PCM with qualifying percentage</li>
+            <li><i class="fa-solid fa-check text-brand-green mr-2"></i> <strong>Focus:</strong> Drug Manufacturing, QC/QA, Pharmacology, R&D</li>
+            <li><i class="fa-solid fa-check text-brand-green mr-2"></i> <strong>Outcome:</strong> Career in Pharma Companies, Drug Inspection, Higher Studies</li>
+          </ul>
+          <a href="#contact" class="block text-center bg-brand-lightBg hover:bg-gray-100 text-brand-blue font-semibold py-2.5 rounded-lg text-sm border border-gray-200 transition">
+            Inquire Admission
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Contact & Location Section -->
+<section id="contact" class="bg-white py-16 px-4 border-t border-gray-200">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <h2 class="text-2xl sm:text-3xl font-bold text-brand-blue">Get In Touch</h2>
+      <div class="w-16 h-1 bg-brand-green mx-auto my-3 rounded"></div>
+      <p class="text-xs sm:text-sm text-gray-600">Visit our campus or leave a message for admission inquiries.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 items-start">
+      <!-- Contact Form -->
+      <form class="bg-brand-lightBg p-6 sm:p-8 rounded-2xl border border-gray-200 space-y-4 shadow-sm">
+        <h3 class="font-bold text-lg text-gray-900 mb-2">Admission Inquiry Form</h3>
+        <div>
+          <label class="block text-xs font-semibold text-gray-600 mb-1">Full Name</label>
+          <input type="text" class="w-full px-4 py-2 rounded-lg border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green" placeholder="Enter your full name">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-gray-600 mb-1">Phone Number</label>
+          <input type="tel" class="w-full px-4 py-2 rounded-lg border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green" placeholder="Enter mobile number">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-gray-600 mb-1">Course Interested In</label>
+          <select class="w-full px-4 py-2 rounded-lg border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green">
+            <option>D.Pharm (Diploma in Pharmacy)</option>
+            <option>B.Pharm (Bachelor of Pharmacy)</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-gray-600 mb-1">Message / Query</label>
+          <textarea rows="3" class="w-full px-4 py-2 rounded-lg border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-green" placeholder="Ask your question..."></textarea>
+        </div>
+        <button type="button" class="w-full bg-brand-green hover:bg-brand-greenHover text-white font-semibold py-2.5 rounded-lg text-sm transition shadow">
+          Submit Application Query
+        </button>
+      </form>
+
+      <!-- Location Information -->
+      <div class="space-y-6">
+        <div class="bg-brand-lightBg p-6 rounded-2xl border border-gray-200">
+          <h3 class="font-bold text-lg text-gray-900 mb-4">College Address & Contact</h3>
+          <div class="space-y-3 text-sm text-gray-600">
+            <p class="flex items-start">
+              <i class="fa-solid fa-location-dot text-brand-green mt-1 mr-3"></i>
+              <span>
+                <strong>Uday Pratap Pharmacy College</strong><br>
+                <a href="https://maps.google.com/?q=Uday+Pratap+Pharmacy+College+Mazadiha+Sakaldiha+Saidpur+Highway" target="_blank" rel="noopener noreferrer" class="hover:underline hover:text-brand-blue">
+                  Mazadiha, Sakaldiha-Saidpur Highway, Near Petrol Pump, Chandauli / Varanasi Region, Uttar Pradesh
+                </a>
+              </span>
+            </p>
+            <p class="flex items-center">
+              <i class="fa-solid fa-phone text-brand-green mr-3"></i>
+              <a href="tel:+919335592212" class="hover:underline">+91 93355 92212</a>
+            </p>
+            <p class="flex items-center">
+              <i class="fa-solid fa-envelope text-brand-green mr-3"></i>
+              <a href="mailto:ajaykusingh749@gmail.com" class="hover:underline">ajaykusingh749@gmail.com</a>
+            </p>
+            <p class="flex items-center">
+              <i class="fa-solid fa-clock text-brand-green mr-3"></i>
+              <span>Mon - Sat: 9:00 AM - 5:00 PM</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Google Map Embed Container -->
+        <div class="rounded-2xl overflow-hidden border border-gray-200 h-64 sm:h-72 shadow-sm">
+          <iframe 
+            class="w-full h-full border-0" 
+            src="https://maps.google.com/maps?q=Uday%20Pratap%20Pharmacy%20College%20Mazadiha%20Sakaldiha%20Saidpur%20Highway&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade" 
+            title="Google Map Location">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+ <!-- ================= FOOTER SECTION ================= -->
+<footer class="relative bg-slate-950 text-slate-300 pt-16 pb-8 border-t border-slate-800/80 overflow-hidden">
+  
+  <!-- Subtle Glowing Background Accent (Matches Hero) -->
+  <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-brand-green/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-4 relative z-10">
+    
+    <!-- Top Call-to-Action / Quick Contact Card -->
+    <div class="mb-16 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-slate-900/90 via-slate-900/50 to-slate-900/90 border border-slate-800 shadow-2xl backdrop-blur-xl flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="space-y-1 text-center md:text-left">
+        <h3 class="text-xl sm:text-2xl font-bold text-white tracking-tight">
+          Ready to Start Your Journey in Pharmacy?
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-400">
+          Admissions are open for the 2026–27 session. Connect with our counselors today.
+        </p>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-3 shrink-0">
+        <a href="#contact" class="bg-gradient-to-r from-brand-green to-emerald-600 hover:from-emerald-600 hover:to-teal-700 text-white px-6 py-3 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-300 shadow-lg shadow-emerald-950/50 hover:shadow-emerald-500/20">
+          Apply Online
+        </a>
+        <a href="tel:+919876543210" class="bg-slate-900/90 hover:bg-slate-800 text-slate-200 border border-slate-700/80 px-6 py-3 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-300">
+          <i class="fa-solid fa-phone text-emerald-400 mr-2"></i>+91 98765 43210
+        </a>
+      </div>
+    </div>
+
+    <!-- Main Navigation Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-800/80">
+      
+      <!-- Brand & About (Cols 1-4) -->
+      <div class="lg:col-span-4 space-y-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-emerald-500/10 border border-emerald-500/30 rounded-xl flex items-center justify-center text-emerald-400 text-lg font-bold">
+            <i class="fa-solid fa-mortar-pestle"></i>
+          </div>
+          <div>
+            <h4 class="font-black text-lg text-white tracking-tight">Uday Pratap Pharmacy College</h4>
+            <p class="text-[11px] text-emerald-400 font-semibold tracking-wider uppercase">PCI Approved Institute</p>
+          </div>
+        </div>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Empowering the next generation of healthcare professionals through practical industry exposure, expert faculty guidance, and state-of-the-art laboratory infrastructure.
+        </p>
+        <!-- Social Links -->
+        <div class="flex items-center gap-3 pt-2">
+          <a href="#" class="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-emerald-400 hover:border-emerald-500/40 transition-all duration-300">
+            <i class="fa-brands fa-facebook-f text-xs"></i>
+          </a>
+          <a href="#" class="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-emerald-400 hover:border-emerald-500/40 transition-all duration-300">
+            <i class="fa-brands fa-instagram text-xs"></i>
+          </a>
+          <a href="#" class="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-emerald-400 hover:border-emerald-500/40 transition-all duration-300">
+            <i class="fa-brands fa-linkedin-in text-xs"></i>
+          </a>
+          <a href="#" class="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-emerald-400 hover:border-emerald-500/40 transition-all duration-300">
+            <i class="fa-brands fa-youtube text-xs"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links (Cols 5-7) -->
+      <div class="lg:col-span-2 space-y-3">
+        <h5 class="text-xs font-bold text-white uppercase tracking-wider border-l-2 border-emerald-500 pl-2.5">
+          Academic Programs
+        </h5>
+        <ul class="space-y-2 text-xs">
+          <li><a href="#courses" class="hover:text-emerald-400 transition-colors duration-200 flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[9px] text-emerald-500"></i> D.Pharm (Diploma)</a></li>
+          <li><a href="#courses" class="hover:text-emerald-400 transition-colors duration-200 flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[9px] text-emerald-500"></i> B.Pharm (Bachelor)</a></li>
+          <li><a href="#facilities" class="hover:text-emerald-400 transition-colors duration-200 flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[9px] text-emerald-500"></i> Pharmacology Lab</a></li>
+          <li><a href="#facilities" class="hover:text-emerald-400 transition-colors duration-200 flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[9px] text-emerald-500"></i> Central Library</a></li>
+        </ul>
+      </div>
+
+      <!-- Institutional Info (Cols 8-9) -->
+      <div class="lg:col-span-2 space-y-3">
+        <h5 class="text-xs font-bold text-white uppercase tracking-wider border-l-2 border-emerald-500 pl-2.5">
+          Quick Links
+        </h5>
+        <ul class="space-y-2 text-xs">
+          <li><a href="#about" class="hover:text-emerald-400 transition-colors duration-200">About College</a></li>
+          <li><a href="#facilities" class="hover:text-emerald-400 transition-colors duration-200">Campus Facilities</a></li>
+          <li><a href="#contact" class="hover:text-emerald-400 transition-colors duration-200">Admission Cell</a></li>
+          <li><a href="#" class="hover:text-emerald-400 transition-colors duration-200">PCI Approvals</a></li>
+        </ul>
+      </div>
+
+      <!-- Campus Address & Info (Cols 10-12) -->
+      <div class="lg:col-span-4 space-y-3">
+        <h5 class="text-xs font-bold text-white uppercase tracking-wider border-l-2 border-emerald-500 pl-2.5">
+          Campus Location
+        </h5>
+        <ul class="space-y-3 text-xs text-slate-400">
+          <li class="flex items-start gap-3">
+            <i class="fa-solid fa-location-dot text-emerald-400 mt-0.5 shrink-0"></i>
+            <span>Sakaldiha-Saidpur Highway, Mazadiha, Chandauli / Varanasi Region, Uttar Pradesh - 232109</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fa-solid fa-envelope text-emerald-400 shrink-0"></i>
+            <span>info@uppharmacycollege.edu.in</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fa-solid fa-clock text-emerald-400 shrink-0"></i>
+            <span>Mon – Sat: 09:00 AM – 05:00 PM</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright & Legal Links Bar -->
+    <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+      <p class="text-center sm:text-left">
+        &copy; 2026 <strong class="text-slate-400 font-semibold">Uday Pratap Pharmacy College</strong>. All rights reserved.
+      </p>
+      <div class="flex items-center space-x-6">
+        <a href="#" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+        <span>•</span>
+        <a href="#" class="hover:text-slate-300 transition-colors">Terms of Service</a>
+        <span>•</span>
+        <a href="#" class="hover:text-slate-300 transition-colors">Mandatory Disclosures</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+    if (!menuBtn || !mobileMenu || !menuIcon) return;
+
+    let initialScrollPos = 0;
+    let isMenuOpen = false;
+
+    // Helper functions
+    const closeMenu = () => {
+      mobileMenu.classList.add('hidden');
+      menuIcon.classList.remove('fa-xmark');
+      menuIcon.classList.add('fa-bars');
+      isMenuOpen = false;
+    };
+
+    const openMenu = () => {
+      mobileMenu.classList.remove('hidden');
+      menuIcon.classList.remove('fa-bars');
+      menuIcon.classList.add('fa-xmark');
+      initialScrollPos = window.scrollY; // Store where user was when opening
+      isMenuOpen = true;
+    };
+
+    // 1. Toggle Button Handler
+    menuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (isMenuOpen) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    // 2. Auto-close ONLY when user actually scrolls down *after* opening the menu
+    window.addEventListener('scroll', () => {
+      if (isMenuOpen) {
+        const currentScrollPos = window.scrollY;
+        // Require a clear scroll movement (more than 25px) from the open position
+        if (Math.abs(currentScrollPos - initialScrollPos) > 25) {
+          closeMenu();
+        }
+      }
+    }, { passive: true });
+
+    // 3. Close when any link inside mobile menu is clicked
+    mobileNavLinks.forEach(link => {
+      link.addEventListener('click', () => closeMenu());
+    });
+
+    // 4. Close menu if user taps outside of header
+    document.addEventListener('click', (e) => {
+      const header = document.querySelector('header');
+      if (header && !header.contains(e.target) && isMenuOpen) {
+        closeMenu();
+      }
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    AOS.init({
+      duration: 800,      // Animation duration
+      once: true,         // Ensures elements stay visible once animated
+      disable: false,     // Ensures animations run on mobile
+      offset: 50,         // Triggers animation earlier on smaller screens
+      startEvent: 'DOMContentLoaded'
+    });
+  });
+</script>
+
+</body>
+</html>
