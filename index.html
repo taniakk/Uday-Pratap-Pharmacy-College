@@ -34,73 +34,110 @@
 
 <!-- Top Info Bar -->
 <div class="bg-brand-blueDark text-gray-200 text-xs sm:text-sm py-2 px-4">
-  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-    <div class="flex items-center space-x-6">
-      <a href="tel:+919335592212" class="hover:text-white hover:underline transition flex items-center">
-        <i class="fa-solid fa-phone text-brand-green mr-2"></i> +91 93355 92212
-      </a>
-      <a href="mailto:ajaykusingh749@gmail.com" class="hover:text-white hover:underline transition flex items-center">
-        <i class="fa-solid fa-envelope text-brand-green mr-2"></i> ajaykusingh749@gmail.com
-      </a>
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+        <!-- Left Side -->
+        <div class="flex items-center gap-3 sm:gap-6 overflow-hidden">
+
+            <!-- Phone -->
+            <a href="tel:+919335592212"
+                class="flex items-center hover:text-white transition whitespace-nowrap">
+                <i class="fa-solid fa-phone text-brand-green mr-1 sm:mr-2"></i>
+                <span>+91 93355 92212</span>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:ajaykusingh749@gmail.com"
+                class="flex items-center hover:text-white transition truncate">
+                <i class="fa-solid fa-envelope text-brand-green mr-1 sm:mr-2"></i>
+                <span class="hidden xs:inline">ajaykusingh749@gmail.com</span>
+                <span class="xs:hidden">Email</span>
+            </a>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="flex items-center gap-3">
+
+            <!-- Location (Desktop Only) -->
+            <a href="https://maps.google.com/?q=Uday+Pratap+Pharmacy+College+Mazadiha+Sakaldiha+Saidpur+Highway"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hidden md:flex items-center hover:text-white transition whitespace-nowrap">
+                <i class="fa-solid fa-location-dot text-brand-green mr-2"></i>
+                Varanasi / Chandauli, UP
+            </a>
+
+            <!-- Admissions Button -->
+            <a href="#contact"
+                class="bg-brand-green hover:bg-brand-greenHover text-white px-2.5 sm:px-3 py-1 rounded font-medium text-[11px] sm:text-xs transition whitespace-nowrap">
+                Admissions Open
+            </a>
+
+        </div>
+
     </div>
-    <div class="flex items-center space-x-4">
-      <a href="https://maps.google.com/?q=Uday+Pratap+Pharmacy+College+Mazadiha+Sakaldiha+Saidpur+Highway" target="_blank" rel="noopener noreferrer" class="hover:text-white hover:underline transition flex items-center">
-        <i class="fa-solid fa-location-dot text-brand-green mr-2"></i> Varanasi / Chandauli, UP
-      </a>
-      <a href="#contact" class="bg-brand-green hover:bg-brand-greenHover text-white px-3 py-1 rounded font-medium text-xs transition inline-block">Admissions Open</a>
-    </div>
-  </div>
 </div>
 
-<!-- Header / Navigation -->
 <header class="bg-white shadow-md sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-4 py-3 sm:py-4 flex justify-between items-center">
-    
-    <!-- Logo -->
-    <!-- The classes h-14, sm:h-16, and md:h-20 control the height across screen sizes -->
-    <a href="#home" class="flex items-center shrink-0">
-      <img 
-        src="/images/udayprataplogo.jpeg" 
-        alt="Uday Pratap Pharmacy College Logo" 
-        class="h-14 sm:h-16 md:h-20 w-auto max-w-[200px] sm:max-w-[280px] object-contain object-left py-1"
-      />
-    </a>
-    
-    <!-- Desktop Navigation (Bumped font to text-base / text-lg with larger spacing) -->
-    <nav class="hidden md:flex items-center space-x-12 text-base lg:text-lg font-bold text-gray-700">
-      <a href="#home" class="hover:text-brand-green transition-colors">Home</a>
-      <a href="#about" class="hover:text-brand-green transition-colors">About Us</a>
-      <a href="#courses" class="hover:text-brand-green transition-colors">Courses</a>
-      <a href="#facilities" class="hover:text-brand-green transition-colors">Facilities</a>
-      <a href="#contact" class="hover:text-brand-green transition-colors">Contact</a>
-    </nav>
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
 
-    <!-- Right Action Button & Mobile Menu Toggle -->
-    <div class="flex items-center space-x-4">
-      <!-- Apply Now Button (Resized to match the larger header) -->
-      <a href="#contact" class="hidden sm:inline-block bg-brand-blue hover:bg-brand-blueDark text-white px-6 py-2.5 rounded-xl font-semibold text-base transition shadow-md hover:shadow-lg">
-        Apply Now
-      </a>
+        <!-- Logo -->
+        <a href="#home" class="flex items-center flex-1">
+            <img
+                src="/images/udayprataplogo.jpeg"
+                alt="Uday Pratap Pharmacy College Logo"
+                class="h-16 sm:h-20 md:h-20 lg:h-24 w-auto object-contain"
+            >
+        </a>
 
-      <!-- Hamburger Button (Mobile Only - Scaled up for easier touch targets) -->
-      <button id="mobile-menu-btn" aria-label="Toggle navigation menu" class="md:hidden text-gray-700 hover:text-brand-green focus:outline-none p-2 rounded-lg transition">
-        <i id="menu-icon" class="fa-solid fa-bars text-2xl sm:text-3xl"></i>
-      </button>
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center space-x-10 text-base lg:text-lg font-bold text-gray-700">
+            <a href="#home" class="hover:text-brand-green">Home</a>
+            <a href="#about" class="hover:text-brand-green">About Us</a>
+            <a href="#courses" class="hover:text-brand-green">Courses</a>
+            <a href="#facilities" class="hover:text-brand-green">Facilities</a>
+            <a href="#contact" class="hover:text-brand-green">Contact</a>
+        </nav>
+
+        <!-- Desktop Button -->
+        <div class="hidden md:flex items-center">
+            <a href="#contact"
+                class="bg-brand-blue hover:bg-brand-blueDark text-white px-6 py-3 rounded-xl font-semibold transition">
+                Apply Now
+            </a>
+        </div>
+
+        <!-- Mobile Menu -->
+        <button id="mobile-menu-btn"
+            class="md:hidden text-gray-700 ml-3">
+            <i id="menu-icon" class="fa-solid fa-bars text-3xl"></i>
+        </button>
+
     </div>
-  </div>
 
-  <!-- Mobile Dropdown Navigation Menu (Font & Padding bumped for better readability) -->
-  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-5 pt-3 pb-5 space-y-2 shadow-xl transition-all duration-300">
-    <a href="#home" class="mobile-nav-link block py-2.5 px-4 text-base font-bold text-gray-700 hover:bg-brand-green/10 hover:text-brand-green rounded-lg transition">Home</a>
-    <a href="#about" class="mobile-nav-link block py-2.5 px-4 text-base font-bold text-gray-700 hover:bg-brand-green/10 hover:text-brand-green rounded-lg transition">About Us</a>
-    <a href="#courses" class="mobile-nav-link block py-2.5 px-4 text-base font-bold text-gray-700 hover:bg-brand-green/10 hover:text-brand-green rounded-lg transition">Courses</a>
-    <a href="#facilities" class="mobile-nav-link block py-2.5 px-4 text-base font-bold text-gray-700 hover:bg-brand-green/10 hover:text-brand-green rounded-lg transition">Facilities</a>
-    <a href="#contact" class="mobile-nav-link block py-2.5 px-4 text-base font-bold text-gray-700 hover:bg-brand-green/10 hover:text-brand-green rounded-lg transition">Contact</a>
-    <a href="#contact" class="mobile-nav-link block sm:hidden text-center bg-brand-blue hover:bg-brand-blueDark text-white py-3 rounded-lg font-bold text-base transition shadow-md mt-3">
-      Apply Now
-    </a>
-  </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="hidden md:hidden bg-white border-t shadow-lg">
+
+        <div class="px-5 py-5 space-y-3">
+
+            <a href="#home" class="mobile-nav-link block py-3 font-semibold">Home</a>
+            <a href="#about" class="mobile-nav-link block py-3 font-semibold">About Us</a>
+            <a href="#courses" class="mobile-nav-link block py-3 font-semibold">Courses</a>
+            <a href="#facilities" class="mobile-nav-link block py-3 font-semibold">Facilities</a>
+            <a href="#contact" class="mobile-nav-link block py-3 font-semibold">Contact</a>
+
+            <a href="#contact"
+                class="block text-center bg-brand-blue text-white py-3 rounded-xl font-semibold mt-4">
+                Apply Now
+            </a>
+
+        </div>
+
+    </div>
 </header>
+
 <!-- Hero Section -->
 <section id="home" class="relative bg-slate-950 text-white py-20 lg:py-28 px-4 overflow-hidden border-b border-slate-800">
   
