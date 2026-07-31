@@ -29,112 +29,73 @@
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 <body class="bg-brand-lightBg text-gray-800 font-sans antialiased">
 
-<!-- Top Info Bar -->
-<div class="bg-brand-blueDark text-gray-200 text-xs sm:text-sm py-2 px-4">
-    <div class="max-w-7xl mx-auto flex items-center justify-between">
 
-        <!-- Left Side -->
-        <div class="flex items-center gap-3 sm:gap-6 overflow-hidden">
-
-            <!-- Phone -->
-            <a href="tel:+919335592212"
-                class="flex items-center hover:text-white transition whitespace-nowrap">
-                <i class="fa-solid fa-phone text-brand-green mr-1 sm:mr-2"></i>
-                <span>+91 93355 92212</span>
-            </a>
-
-            <!-- Email -->
-            <a href="mailto:ajaykusingh749@gmail.com"
-                class="flex items-center hover:text-white transition truncate">
-                <i class="fa-solid fa-envelope text-brand-green mr-1 sm:mr-2"></i>
-                <span class="hidden xs:inline">ajaykusingh749@gmail.com</span>
-                <span class="xs:hidden">Email</span>
-            </a>
-
-        </div>
-
-        <!-- Right Side -->
-        <div class="flex items-center gap-3">
-
-            <!-- Location (Desktop Only) -->
-            <a href="https://maps.google.com/?q=Uday+Pratap+Pharmacy+College+Mazadiha+Sakaldiha+Saidpur+Highway"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="hidden md:flex items-center hover:text-white transition whitespace-nowrap">
-                <i class="fa-solid fa-location-dot text-brand-green mr-2"></i>
-                Varanasi / Chandauli, UP
-            </a>
-
-            <!-- Admissions Button -->
-            <a href="#contact"
-                class="bg-brand-green hover:bg-brand-greenHover text-white px-2.5 sm:px-3 py-1 rounded font-medium text-[11px] sm:text-xs transition whitespace-nowrap">
-                Admissions Open
-            </a>
-
-        </div>
-
-    </div>
-</div>
 
 <header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
 
-        <!-- Logo -->
-        <a href="#home" class="flex items-center flex-1">
-            <img
-                src="/images/udayprataplogo.jpeg"
-                alt="Uday Pratap Pharmacy College Logo"
-                class="h-16 sm:h-20 md:h-20 lg:h-24 w-auto object-contain"
+        <!-- Logo & College Name -->
+        <a href="#home" class="flex items-center gap-3 group">
+            <img 
+                src="/images/udayprataplogo.jpeg" 
+                alt="Uday Pratap Pharmacy College Logo" 
+                class="h-12 sm:h-16 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
             >
+            <div class="flex flex-col justify-center">
+                <span class="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 leading-tight tracking-wide group-hover:text-brand-green transition-colors">
+                    Uday Pratap
+                </span>
+                <span class="text-xs sm:text-sm font-semibold text-brand-blue uppercase tracking-wider">
+                    Pharmacy College
+                </span>
+            </div>
         </a>
 
         <!-- Desktop Navigation -->
-        <nav class="hidden md:flex items-center space-x-10 text-base lg:text-lg font-bold text-gray-700">
-            <a href="#home" class="hover:text-brand-green">Home</a>
-            <a href="#about" class="hover:text-brand-green">About Us</a>
-            <a href="#courses" class="hover:text-brand-green">Courses</a>
-            <a href="#facilities" class="hover:text-brand-green">Facilities</a>
-            <a href="#contact" class="hover:text-brand-green">Contact</a>
+        <nav class="hidden md:flex items-center space-x-6 lg:space-x-8 text-base lg:text-lg font-semibold text-gray-700">
+            <a href="#home" class="hover:text-brand-green transition-colors duration-200">Home</a>
+            <a href="#about" class="hover:text-brand-green transition-colors duration-200">About Us</a>
+            <a href="#courses" class="hover:text-brand-green transition-colors duration-200">Courses</a>
+            <a href="#facilities" class="hover:text-brand-green transition-colors duration-200">Facilities</a>
+            <a href="#contact" class="hover:text-brand-green transition-colors duration-200">Contact</a>
         </nav>
 
         <!-- Desktop Button -->
         <div class="hidden md:flex items-center">
-            <a href="#contact"
-                class="bg-brand-blue hover:bg-brand-blueDark text-white px-6 py-3 rounded-xl font-semibold transition">
+            <a href="#contact" 
+               class="bg-brand-blue hover:bg-brand-blueDark text-white px-5 py-2.5 lg:px-6 lg:py-3 rounded-xl font-semibold shadow-sm hover:shadow-md transition-all duration-200">
                 Apply Now
             </a>
         </div>
 
-        <!-- Mobile Menu -->
-        <button id="mobile-menu-btn"
-            class="md:hidden text-gray-700 ml-3">
-            <i id="menu-icon" class="fa-solid fa-bars text-3xl"></i>
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" 
+                class="md:hidden text-gray-700 hover:text-brand-blue focus:outline-none p-2 rounded-lg transition-colors">
+            <i id="menu-icon" class="fa-solid fa-bars text-2xl sm:text-3xl"></i>
         </button>
 
     </div>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu"
-        class="hidden md:hidden bg-white border-t shadow-lg">
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-lg">
+        <div class="px-6 py-4 space-y-2">
+            <a href="#home" class="mobile-nav-link block py-2.5 font-semibold text-gray-700 hover:text-brand-green transition-colors">Home</a>
+            <a href="#about" class="mobile-nav-link block py-2.5 font-semibold text-gray-700 hover:text-brand-green transition-colors">About Us</a>
+            <a href="#courses" class="mobile-nav-link block py-2.5 font-semibold text-gray-700 hover:text-brand-green transition-colors">Courses</a>
+            <a href="#facilities" class="mobile-nav-link block py-2.5 font-semibold text-gray-700 hover:text-brand-green transition-colors">Facilities</a>
+            <a href="#contact" class="mobile-nav-link block py-2.5 font-semibold text-gray-700 hover:text-brand-green transition-colors">Contact</a>
 
-        <div class="px-5 py-5 space-y-3">
-
-            <a href="#home" class="mobile-nav-link block py-3 font-semibold">Home</a>
-            <a href="#about" class="mobile-nav-link block py-3 font-semibold">About Us</a>
-            <a href="#courses" class="mobile-nav-link block py-3 font-semibold">Courses</a>
-            <a href="#facilities" class="mobile-nav-link block py-3 font-semibold">Facilities</a>
-            <a href="#contact" class="mobile-nav-link block py-3 font-semibold">Contact</a>
-
-            <a href="#contact"
-                class="block text-center bg-brand-blue text-white py-3 rounded-xl font-semibold mt-4">
+            <a href="#contact" 
+               class="block text-center bg-brand-blue hover:bg-brand-blueDark text-white py-3 rounded-xl font-semibold mt-4 shadow-sm transition-all duration-200">
                 Apply Now
             </a>
-
         </div>
-
     </div>
 </header>
 
@@ -771,6 +732,16 @@
     });
   });
 </script>
+
+<!-- whatsapp -->
+ <!-- Floating WhatsApp Button -->
+<a href="https://wa.me/919335592212"
+   target="_blank"
+   aria-label="Chat on WhatsApp"
+   class="fixed bottom-5 right-5 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl hover:scale-110 hover:bg-[#1ebe5d] transition-all duration-300">
+
+    <i class="fab fa-whatsapp text-3xl"></i>
+</a>
 
 </body>
 </html>
